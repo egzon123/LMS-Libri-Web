@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.lms.LMSLibriWeb_LMSLibriWeb_jar_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.lms.LMSLibriWeb.model.Files</class>
+    <class>com.lms.LMSLibriWeb.model.Folder</class>
+    <class>com.lms.LMSLibriWeb.model.Course</class>
+    <class>com.lms.LMSLibriWeb.model.Users</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=lmsDatabase"/>
+      <property name="javax.persistence.jdbc.user" value="xoni"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="xoni123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
